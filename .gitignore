@@ -1,0 +1,12 @@
+/*
+!/.gitignore
+!/README.md
+!/ROADMAP.md
+!/CHANGELOG.md
+!/assets/
+/assets/*
+!/assets/*.png
+!/assets/*.jpg
+!/assets/*.webp
+!/assets/*.gif
+!/assets/*.mp4
