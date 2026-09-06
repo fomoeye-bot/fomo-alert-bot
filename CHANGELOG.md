@@ -11,6 +11,7 @@ The first MVP is being tested. This entry describes the current implementation; 
 - Quick Check with token metrics and a refresh button.
 - Up to five active alerts per user.
 - An Open in fomo button on alert notifications.
+- A link to @fomo_eye on X in the /start welcome message, inviting users to follow product updates.
 
 ### Refined during testing
 

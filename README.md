@@ -8,6 +8,8 @@ Set a target for a token and receive a Telegram notification when its market cap
 
 [Open Fomo Eye in Telegram](https://t.me/fomo_eye_bot) · [Product updates](CHANGELOG.md) · [Roadmap](ROADMAP.md)
 
+[Follow @fomo_eye on X](https://x.com/fomo_eye) for product updates, demos and new features.
+
 ## What the MVP does
 
 - **Market-cap targets:** enter a value such as $1.5m. Fomo Eye determines whether the target requires a rise or a fall.
