@@ -17,6 +17,9 @@ The first MVP is being tested. This entry describes the current implementation; 
 
 ### Updated September 7, 2026
 
+- Allow switching networks using the current network picker while entering a contract address.
+- Simplify owner statistics with concise totals and clearer navigation.
+
 - Add an owner-only /stats view with user counts, usernames, active token alerts and exact targets.
 - Add paginated user cards and a refresh button.
 - Record profile updates and activity timestamps from new interactions; historical usernames and arrival dates are not reconstructed.

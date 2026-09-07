@@ -32,7 +32,7 @@ An owner-only Telegram statistics view shows user profiles and active token aler
 
 ## Development progress
 
-The current MVP is being tested in Telegram. Internal validation includes 106 automated checks covering target conditions, navigation, alert delivery, access controls and request limits.
+The current MVP is being tested in Telegram. Internal validation includes 108 automated checks covering target conditions, navigation, alert delivery, access controls and request limits.
 
 A simulated workload of 100 users with five distinct tokens each on one network required 17 market-data requests per monitoring cycle. This is a test result, not a count of live users or a production reliability claim.
 
