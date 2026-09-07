@@ -26,9 +26,13 @@ Solana · Ethereum · Base · Robinhood · BNB Chain · Arbitrum · Polygon · A
 
 Market data comes from DEX Screener. Token availability depends on its coverage. Monitoring currently runs on a one-minute schedule, so a brief move between checks can be missed.
 
+## Operator tools
+
+An owner-only Telegram statistics view shows user profiles and active token alert targets. Access is restricted to a configured Telegram user ID. User details and operational data stay outside this repository.
+
 ## Development progress
 
-The current MVP is being tested in Telegram. Internal validation includes 102 automated checks covering target conditions, navigation, alert delivery, access controls and request limits.
+The current MVP is being tested in Telegram. Internal validation includes 106 automated checks covering target conditions, navigation, alert delivery, access controls and request limits.
 
 A simulated workload of 100 users with five distinct tokens each on one network required 17 market-data requests per monitoring cycle. This is a test result, not a count of live users or a production reliability claim.
 

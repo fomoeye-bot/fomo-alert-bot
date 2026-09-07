@@ -17,6 +17,11 @@ The first MVP is being tested. This entry describes the current implementation; 
 
 ### Updated September 7, 2026
 
+- Add an owner-only /stats view with user counts, usernames, active token alerts and exact targets.
+- Add paginated user cards and a refresh button.
+- Record profile updates and activity timestamps from new interactions; historical usernames and arrival dates are not reconstructed.
+- Add /myid and local administrator configuration. Verify access restrictions and legacy database migration.
+
 - Clarify that Fomo Eye is built for fomo app users across the project overview and bot welcome message.
 - Document plans for direct fomo API integration, subject to official access and supported capabilities.
 - Shorten the X follow invitation in the bot welcome message and README.
