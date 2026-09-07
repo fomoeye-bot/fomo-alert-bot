@@ -1,5 +1,7 @@
 # Product updates
 
+Fomo Eye is an independent project built for users of the [fomo app](https://fomo.family). We plan to integrate directly with fomo APIs, subject to official access and supported capabilities. The current MVP uses DEX Screener for market data.
+
 ## Unreleased - MVP testing
 
 The first MVP is being tested. This entry describes the current implementation; it does not announce public availability.
@@ -11,7 +13,13 @@ The first MVP is being tested. This entry describes the current implementation; 
 - Quick Check with token metrics and a refresh button.
 - Up to five active alerts per user.
 - An Open in fomo button on alert notifications.
-- A link to @fomo_eye on X in the /start welcome message, inviting users to follow product updates.
+- A "Follow us on X for updates and new features" link in the /start welcome message.
+
+### Updated September 7, 2026
+
+- Clarify that Fomo Eye is built for fomo app users across the project overview and bot welcome message.
+- Document plans for direct fomo API integration, subject to official access and supported capabilities.
+- Shorten the X follow invitation in the bot welcome message and README.
 
 ### Refined during testing
 

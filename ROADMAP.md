@@ -2,6 +2,8 @@
 
 Fomo Eye is currently an MVP in testing. This roadmap describes priorities; dates and release scope will be announced when confirmed.
 
+Fomo Eye is an independent project built for users of the [fomo app](https://fomo.family). We plan to integrate directly with fomo APIs, subject to official access and supported capabilities. The current MVP uses DEX Screener for market data.
+
 ## Current focus
 
 ### Validate the alert experience
@@ -21,6 +23,10 @@ Agree the pilot audience, publish the Telegram entry point when ready and give t
 ### Learn from pilot usage
 
 Measure actual use and delivery outcomes. Use observed problems and feedback to select the next improvements.
+
+## Planned integration direction
+
+Pursue official fomo API access to bring the bot closer to the fomo app experience. Confirm available data, wallet authorization and trading capabilities with the fomo team before defining implementation scope. No direct fomo API integration is live in the current MVP.
 
 ## Under consideration
 

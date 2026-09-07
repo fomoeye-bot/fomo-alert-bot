@@ -1,14 +1,16 @@
 # Fomo Eye
 
-**Token market-cap alerts in Telegram.**
+**Telegram market-cap alerts for fomo app users.**
 
 Set a target for a token and receive a Telegram notification when its market cap reaches that level. Follow the tokens you care about without keeping their charts open.
+
+Fomo Eye is an independent project built for users of the [fomo app](https://fomo.family). We plan to integrate directly with fomo APIs, subject to official access and supported capabilities. The current MVP uses DEX Screener for market data.
 
 **Status: MVP in testing.**
 
 [Open Fomo Eye in Telegram](https://t.me/fomo_eye_bot) · [Product updates](CHANGELOG.md) · [Roadmap](ROADMAP.md)
 
-[Follow @fomo_eye on X](https://x.com/fomo_eye) for product updates, demos and new features.
+[Follow us on X for updates and new features](https://x.com/fomo_eye).
 
 ## What the MVP does
 
