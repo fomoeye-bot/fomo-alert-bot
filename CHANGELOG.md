@@ -6,9 +6,17 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 The first MVP is being tested. This entry describes the current implementation; it does not announce public availability.
 
+### Updated September 8, 2026
+
+- Accept fomo.family token links from any menu or setup step and ask for the target market cap directly.
+- Remove percentage-based alert setup and the alert-type selection step.
+- Convert existing active percentage alerts to equivalent absolute market-cap targets on startup.
+- Preserve alert limits, shared quote limits and stale-button protection for link-based setup.
+
 ### Available in the testing build
 
-- Telegram alerts for a target market cap or a percentage change from an entry market cap.
+- Telegram alerts for an exact market-cap target.
+- Direct alert setup from fomo.family token links.
 - Network selection, including Robinhood immediately after Base.
 - Quick Check with token metrics and a refresh button.
 - Up to five active alerts per user.

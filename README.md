@@ -15,7 +15,7 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 ## What the MVP does
 
 - **Market-cap targets:** enter a value such as $1.5m. Fomo Eye determines whether the target requires a rise or a fall.
-- **Percentage targets:** track a change from your chosen entry market cap, such as +50% or −20%.
+- **fomo token links:** paste a fomo.family token link from any menu or setup step to enter a market-cap target directly.
 - **Quick Check:** view a token’s price, market cap, FDV and liquidity, with a manual refresh option.
 - **A focused alert list:** keep up to five active alerts, with each target visible directly in the list. Completed alerts leave the list.
 - **Open in fomo:** jump from an alert notification to the token page.
@@ -32,7 +32,7 @@ An owner-only Telegram statistics view shows user profiles and active token aler
 
 ## Development progress
 
-The current MVP is being tested in Telegram. Internal validation includes 108 automated checks covering target conditions, navigation, alert delivery, access controls and request limits.
+The current MVP is being tested in Telegram. Internal validation includes 125 automated checks covering target conditions, navigation, alert delivery, access controls and request limits.
 
 A simulated workload of 100 users with five distinct tokens each on one network required 17 market-data requests per monitoring cycle. This is a test result, not a count of live users or a production reliability claim.
 
