@@ -6,6 +6,10 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 ## Current focus
 
+### Validate Plus payments
+
+Test the complete Telegram Stars checkout for 30-day Plus access, including continuation of alert setup and plan expiry. Automated payment checks are complete; live checkout and final launch pricing remain to be confirmed.
+
 ### Validate the alert experience
 
 Check the complete flow from adding a token to receiving an alert, including target changes, completed alerts and stale buttons. Continue collecting feedback from hands-on testing.

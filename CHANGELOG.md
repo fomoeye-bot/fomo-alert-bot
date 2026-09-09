@@ -6,6 +6,15 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 The first MVP is being tested. This entry describes the current implementation; it does not announce public availability.
 
+### Updated September 9, 2026
+
+- Prepare a one-time Telegram Stars payment flow for Plus: 25 active alerts for 30 days, without automatic renewal.
+- Offer Plus when the Free alert limit is reached, and resume alert setup after a confirmed payment.
+- Add My plan with the current plan, expiry and available alert slots.
+- Preserve paid access across restarts and prevent duplicate payment notifications from extending access twice.
+- Retain existing alerts after Plus expires; apply the Free limit to new alerts.
+- Add payment terms and a payment support entry point. Validate checkout, renewal, expiry and refund notifications with simulated Telegram responses. Live payment testing is pending.
+
 ### Updated September 8, 2026
 
 - Accept fomo.family token links from any menu or setup step and ask for the target market cap directly.
