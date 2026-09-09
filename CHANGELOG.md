@@ -12,6 +12,13 @@ The first MVP is being tested. This entry describes the current implementation; 
 
 ### Updated September 9, 2026
 
+- Add automatic DEX Screener boost and ad notifications for tokens with active alerts, included on Free and Plus.
+- Share two promotion feeds across users and check them every 30 seconds without changing the market-cap monitoring interval.
+- Save promotion state across restarts, suppress repeated feed entries and avoid sending an initial backlog.
+- Keep market-cap alerts active after promotion notifications and use a single Open in fomo button.
+- Preserve existing queued notifications when updating the delivery storage.
+- Update the Telegram preview, profile description and welcome message with token alerts, promotion notifications, fomo links and X updates.
+
 - Prepare a one-time Telegram Stars payment flow for Plus: 25 active alerts for 30 days, without automatic renewal.
 - Offer Plus when the Free alert limit is reached, and resume alert setup after a confirmed payment.
 - Add My plan with the current plan, expiry and available alert slots.
@@ -30,6 +37,7 @@ The first MVP is being tested. This entry describes the current implementation; 
 
 - Telegram alerts for an exact market-cap target.
 - Direct alert setup from fomo.family token links.
+- Automatic boost and ad notifications for actively tracked tokens, included on Free.
 - Network selection, including Robinhood immediately after Base.
 - Quick Check with token metrics and a refresh button.
 - Up to five active alerts per user.

@@ -10,6 +10,10 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 ## Current focus
 
+### Validate promotion notifications
+
+Check delivery of DEX Screener boost and ad notifications for tokens with active alerts. The implementation is included on Free, with shared polling and persistent duplicate suppression. Both feed endpoints have passed an initial live read-only check; sustained monitoring and delivery still need observation on the running server.
+
 ### Validate Plus payments
 
 Test the complete Telegram Stars checkout for 30-day Plus access, including continuation of alert setup and plan expiry. Automated payment checks are complete; live checkout and final launch pricing remain to be confirmed.
