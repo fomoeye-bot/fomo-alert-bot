@@ -1,5 +1,9 @@
 # Fomo Eye
 
+<p align="center">
+  <img src="assets/fomo-eye-logo.png" alt="Fomo Eye logo" width="240">
+</p>
+
 **Telegram market-cap alerts for fomo app users.**
 
 Set a target for a token and receive a Telegram notification when its market cap reaches that level. Follow the tokens you care about without keeping their charts open.

@@ -1,5 +1,9 @@
 # Roadmap
 
+<p align="center">
+  <img src="assets/fomo-eye-logo.png" alt="Fomo Eye logo" width="240">
+</p>
+
 Fomo Eye is currently an MVP in testing. This roadmap describes priorities; dates and release scope will be announced when confirmed.
 
 Fomo Eye is an independent project built for users of the [fomo app](https://fomo.family). We plan to integrate directly with fomo APIs, subject to official access and supported capabilities. The current MVP uses DEX Screener for market data.
