@@ -10,6 +10,14 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 ## Current focus
 
+### Validate trader notifications
+
+Test handle lookup, notification filters and delivery from the shared trader feed. Check reconnect behavior and provider coverage during sustained operation. First-entry detection must distinguish observed additions from new entries and make gaps in available data clear.
+
+### Connect wallets and copy execution
+
+Build the secure wallet connection flow, then connect signing and swap execution network by network. The current interface saves fixed-amount setups and risk settings, but does not execute trades. Validate gas checks, slippage, position limits, mirrored exits and confirmed-fill accounting before enabling automatic copying.
+
 ### Validate promotion notifications
 
 Check delivery of DEX Screener boost and ad notifications for tokens with active alerts. The implementation is included on Free, with shared polling and persistent duplicate suppression. Both feed endpoints have passed an initial live read-only check; sustained monitoring and delivery still need observation on the running server.

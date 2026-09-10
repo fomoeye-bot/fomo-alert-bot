@@ -10,6 +10,18 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 The first MVP is being tested. This entry describes the current implementation; it does not announce public availability.
 
+### Updated September 10, 2026
+
+- Add a trader-focused menu with Find a trader, My traders, Alerts, My wallets, Portfolio and Settings.
+- Support trader lookup by handle or fomo profile link, with a visual handle example.
+- Add a four-step notification setup: trade type, minimum trade size, minimum market cap and maximum market cap.
+- Share a trader event stream across subscriptions, reject connection replay and suppress duplicate events.
+- Require a fresh holdings snapshot for first-entry detection and fresh market-cap data for cap filters.
+- Add fixed-amount copy setups and persistent risk settings. Setups remain inactive; wallet signing and automatic execution are not connected.
+- Add portfolio and closed-trade views backed by a fill ledger, with fee and partial-exit accounting tested on simulated fills.
+- Extend owner statistics with trader subscriptions, connection status and reported API credit balance.
+- Keep token targets, free promotion notifications and Plus access available through the updated menu.
+
 ### Updated September 9, 2026
 
 - Add automatic DEX Screener boost and ad notifications for tokens with active alerts, included on Free and Plus.
