@@ -1,4 +1,4 @@
-# FOMO EYE — website update
+# FOMO EYE - website update
 
 **12 September 2026 · Website built and uploaded to hosting**
 
@@ -59,7 +59,7 @@ The website update does not change the bot's release status. In particular, it d
 
 | Destination | Link |
 | --- | --- |
-| Project domain | [fomoeye.com](https://fomoeye.com) — registration under review at this update |
+| Project domain | [fomoeye.com](https://fomoeye.com) - registration under review at this update |
 | Hosted website preview | [Open the website](https://darkgoldenrod-butterfly-749651.hostingersite.com/) |
 | Telegram bot | [@fomo_eye_bot](https://t.me/fomo_eye_bot) |
 | X / Twitter | [@fomo_eye](https://x.com/fomo_eye) |
