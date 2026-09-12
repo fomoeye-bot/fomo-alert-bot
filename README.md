@@ -16,7 +16,7 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 **Status: MVP in testing.**
 
-[Open Fomo Eye in Telegram](https://t.me/fomo_eye_bot) · [Product updates](CHANGELOG.md) · [Roadmap](ROADMAP.md)
+[Open Fomo Eye in Telegram](https://t.me/fomo_eye_bot) · [Product updates](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Website update](WEBSITE_UPDATE.md)
 
 [Follow us on X for updates and new features](https://x.com/fomo_eye).
 
