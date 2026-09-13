@@ -10,6 +10,10 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 The first MVP is being tested. This entry describes the current implementation; it does not announce public availability.
 
+### Updated September 14, 2026
+
+Work continues on copy trading implementation and Privy wallet integration. Current development focuses on trader event verification, user consent, spending limits and reliable transaction execution. Automated trading remains under development.
+
 ### Updated September 10, 2026
 
 - Add a trader-focused menu with Find a trader, My traders, Alerts, My wallets, Portfolio and Settings.
