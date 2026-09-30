@@ -10,6 +10,44 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 The first MVP is being tested. This entry describes the current implementation; it does not announce public availability.
 
+### Updated September 30, 2026
+
+Copy trading executes. A trader's buy is copied by contract address from the
+user's own wallet on Solana, Base, BNB Chain, Ethereum and Robinhood.
+
+- Buy, sell, withdraw and send tokens out, each carried out with real funds on
+  every one of the five networks, with the amount that arrived checked against
+  the amount sent.
+- No allow-list of token formats. Solana tokens on the Token-2022 standard are
+  traded like any other, and a token that charges a transfer fee is traded with
+  that fee rather than refused. Routes longer than one step are supported.
+- Auto-sell after the trader exits, off by default and switched on by the user.
+  With it off, the user is still told the trader left.
+- Withdraw the network coin to any address, including everything at once, and
+  send the tokens themselves to a personal wallet instead of selling them.
+- Export the wallet private key from the bot, with the message removing itself
+  after a minute, so access to the funds does not depend on this service.
+
+Privy is no longer part of the design. Wallets are created by the server, keys
+are encrypted at rest and decrypted only inside a separate signing component
+that checks every transaction against a plan frozen before signing. See
+[SECURITY.md](SECURITY.md).
+
+Corrected during live testing, listed because it is the part a reader can weigh:
+
+- Withdrawals in the EVM networks could never be signed, because the plan did
+  not declare which asset was being spent.
+- Available to withdraw showed zero on funded wallets: the fee reserve was a
+  flat amount in every network instead of the fee actually being charged.
+- Withdrawing everything failed on networks that charge a separate data fee.
+- A transfer that had already been sent could be reported as a failure when a
+  node stopped answering. Sent is no longer reported as failed.
+- Positions in Solana were stored with the address lower-cased, which is not a
+  valid address on that network, so they could not be sold.
+- Refusals now carry a sentence in plain language next to the code, and a
+  network whose node did not answer is shown as not read rather than as a zero
+  balance.
+
 ### Updated September 14, 2026
 
 Work continues on copy trading implementation and Privy wallet integration. Current development focuses on trader event verification, user consent, spending limits and reliable transaction execution. Automated trading remains under development.
