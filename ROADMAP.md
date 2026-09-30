@@ -14,9 +14,17 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 Test handle lookup, notification filters and delivery from the shared trader feed. Check reconnect behavior and provider coverage during sustained operation. First-entry detection must distinguish observed additions from new entries and make gaps in available data clear.
 
-### Connect wallets and copy execution
+### Finish the copy trading money paths
 
-Build the secure wallet connection flow, then connect signing and swap execution network by network. The current interface saves fixed-amount setups and risk settings, but does not execute trades. Validate gas checks, slippage, position limits, mirrored exits and confirmed-fill accounting before enabling automatic copying.
+Wallets, signing and swap execution are connected on all five copy trading networks, and buying, selling, withdrawals and token transfers have each been carried out with real funds. What remains is the unhappy half of every path: what a user sees when a node is down, a token cannot be routed, or a transaction is sent but not yet confirmed. Each of those has to say what happened to the money, not only that something failed.
+
+### Turn fixed trading limits into settings
+
+Trade size, total spend and which trader actions are copied exist today as fixed values. They become settings the user owns, with defaults that are safe on their own.
+
+### Decide how the service charges for copying
+
+No fee model is implemented. It has to be decided before opening to users, because a fee has to be built into the same path that signs a trade rather than bolted on afterwards.
 
 ### Validate promotion notifications
 
@@ -32,7 +40,7 @@ Check the complete flow from adding a token to receiving an alert, including tar
 
 ### Validate sustained operation
 
-Observe monitoring and notification delivery over a defined test period. Check recovery after restarts and temporary service failures before expanding access.
+Observe monitoring, copying and notification delivery over a defined test period. Check recovery after restarts and temporary service failures before expanding access. An outside health check now runs on a schedule and reports when the bot stops answering, a wallet runs low on the coin that pays fees, notifications back up or a backup goes stale.
 
 ## Next
 
@@ -54,3 +62,9 @@ Pursue official fomo API access to bring the bot closer to the fomo app experien
 - Faster ways to adjust an existing target.
 
 These items are candidates, not scheduled commitments. Implementation details and internal security work are kept out of the public roadmap.
+
+## Known limitations we intend to remove
+
+- Coins sent to an address on another network cannot be recovered. We warn, and we cannot undo.
+- Positions show what you hold now. Results over time are recorded internally and not yet shown.
+- Rent stays locked in Solana token accounts left behind after a transfer, because reclaiming it needs an account close that the signing component does not perform yet.
