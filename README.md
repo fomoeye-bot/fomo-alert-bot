@@ -10,13 +10,15 @@ Set a target for a token and receive a Telegram notification when its market cap
 
 The latest testing build also detects DEX Screener boosts and ads for tokens with active alerts. Promotion notifications are included on Free and link directly to the token in fomo, where users can buy or sell.
 
-Trader notifications are now in testing. Find a trader by handle, choose which trades to follow and filter by trade size and token market cap. The copy-trading interface supports saved fixed-amount setups; wallet connection and automatic execution are still under development.
+Trader notifications are now in testing. Find a trader by handle, choose which trades to follow and filter by trade size and token market cap.
+
+Copy trading now executes. When a trader you follow buys a token, the bot buys the same token for you by its contract address, from your own wallet. Buying, selling, withdrawals and sending tokens out have each been carried out with real funds on Solana, Base, BNB Chain, Ethereum and Robinhood. It is still a testing build and is not open to the public.
 
 Fomo Eye is an independent project built for users of the [fomo app](https://fomo.family). We plan to integrate directly with fomo APIs, subject to official access and supported capabilities. The testing build uses DEX Screener for market data and the independent fomoapi.io service for trader data. This is not an official fomo integration.
 
 **Status: MVP in testing.**
 
-[Open Fomo Eye in Telegram](https://t.me/fomo_eye_bot) · [Product updates](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Website update](WEBSITE_UPDATE.md)
+[Open Fomo Eye in Telegram](https://t.me/fomo_eye_bot) · [Product updates](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Security](SECURITY.md) · [Website update](WEBSITE_UPDATE.md)
 
 [Follow us on X for updates and new features](https://x.com/fomo_eye).
 
@@ -24,7 +26,13 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 
 - **Find a trader:** search by fomo handle or profile link and open their card. Unavailable profile metrics are left unreported.
 - **Trader notifications:** choose first observed entries, all buys, or buys and sells. Set a minimum trade size and a market-cap range, then edit or stop notifications from the trader list.
-- **Copy setup:** save a fixed USD amount per trader and configure trade limits. Setups remain inactive until wallet signing and execution are connected.
+- **Copy setup:** save a fixed USD amount per trader and configure trade limits.
+- **Copy buys:** a trader buys, the bot buys the same token for you by contract address. Any token that trades on fomo, with no allow-list of supported token formats.
+- **Sell when you want:** sell a position from the bot at market in one tap.
+- **Auto-sell, if you choose it:** off by default. With it on, the bot sells after the trader exits. With it off you are still told the trader left, and the decision stays yours.
+- **Take the tokens instead:** send the coins themselves to your own wallet rather than selling them.
+- **Withdraw your money:** any network, any address, including everything at once.
+- **Export your private key:** the wallet is yours, and the message carrying the key deletes itself after a minute.
 - **Market-cap targets:** enter a value such as $1.5m. Fomo Eye determines whether the target requires a rise or a fall.
 - **fomo token links:** paste a fomo.family token link from any menu or setup step to enter a market-cap target directly.
 - **Boost and ad notifications:** automatically watch DEX Screener's latest promotion lists for tokens with active alerts, on Free and Plus. Promotion notifications keep the market-cap alert running.
@@ -32,6 +40,14 @@ Fomo Eye is an independent project built for users of the [fomo app](https://fom
 - **A focused alert list:** keep up to five active alerts on Free, with each target visible directly in the list. Completed alerts leave the list.
 - **Plus payment flow in testing:** a one-time Telegram Stars purchase unlocks 25 active alerts for 30 days. My plan shows access, expiry and available slots. Live payment testing is still pending.
 - **Open in fomo:** jump from an alert notification to the token page.
+
+### Copy trading networks
+
+Solana · Base · BNB Chain · Ethereum · Robinhood
+
+Each network holds its own money, and there is no bridge between them here. Sending a transaction costs a fee in that network's own coin, so a little of it has to stay on the wallet you trade from.
+
+The bot creates two wallets for you when you start, one for the EVM networks and one for Solana. They are yours, not a pooled account, and every trade is made from your own balance. How keys are protected and what is checked before anything is signed is described in [SECURITY.md](SECURITY.md).
 
 ### Token alert networks
 
@@ -49,7 +65,7 @@ An owner-only Telegram statistics view shows user profiles, active token alert t
 
 ## Development progress
 
-The current MVP is being tested in Telegram. Internal validation covers target conditions, trader filters, navigation, alert delivery, access controls, request budgets, promotion detection and payment handling. Both promotion endpoints and trader search have returned data in live read-only checks. The trader WebSocket also connected successfully and supplied its welcome message and replay records. Sustained live trader delivery still needs testing. Payment and trade-accounting checks use simulated data; live checkout and trading execution are not validated.
+The current MVP is being tested in Telegram. Internal validation covers target conditions, trader filters, navigation, alert delivery, access controls, request budgets, promotion detection and payment handling. Both promotion endpoints and trader search have returned data in live read-only checks. The trader WebSocket also connected successfully and supplied its welcome message and replay records. Sustained live trader delivery still needs testing. Payment checks use simulated data and live checkout is not validated. Trading execution is validated: buys, sells, withdrawals and token transfers have each been carried out with real funds on all five copy trading networks, and the amounts that arrived were checked against the amounts sent. Automated checks cover the signing rules, the position ledger, repeat protection and recovery after a crash in the middle of an operation.
 
 A simulated workload of 100 users with five distinct tokens each on one network required 17 market-data requests per monitoring cycle. This is a test result, not a count of live users or a production reliability claim.
 
